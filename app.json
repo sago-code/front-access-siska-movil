@@ -15,12 +15,23 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yourcompany.yourapp",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to let you take photos.",
+        "NSPhotoLibraryUsageDescription": "This app needs access to your photo library to let you choose photos."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#ffffff",
+        "package": "com.yourcompany.yourapp",
+        "permissions": [
+          "CAMERA",
+          "WRITE_EXTERNAL_STORAGE",
+          "READ_EXTERNAL_STORAGE"
+        ]
       }
     },
     "web": {
