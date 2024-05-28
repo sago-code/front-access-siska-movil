@@ -31,6 +31,15 @@ export default function HomeScreen({ navigation }: HomeProps) {
         navigation.navigate('Perfil');
     }
 
+    const handleReports= () => {
+        navigation.navigate('Reports');
+    }
+
+    const handleStay= () => {
+        navigation.navigate('Stay');
+    }
+
+
     return (
         <ImageBackground
             source={require('../images/background.png')}
@@ -65,14 +74,14 @@ export default function HomeScreen({ navigation }: HomeProps) {
                     </TouchableOpacity>
                 </View>
                 <View style={stylesHome().row}>
-                    <TouchableOpacity style={stylesHome().buttonNov}>
+                    <TouchableOpacity style={stylesHome().buttonNov} onPress={handleReports}>
                         <Image 
                             source={require('../images/report_of_nov.png')}
                             style={stylesHome().imageReport}
                         />
                         <Text style={stylesHome().textC}>Reportes</Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={stylesHome().buttonEst}>
+                    <TouchableOpacity style={stylesHome().buttonEst} onPress={handleStay}>
                         <Image
                             source={require('../images/estadia.png')}
                             style={stylesHome().imageEst}
@@ -82,12 +91,10 @@ export default function HomeScreen({ navigation }: HomeProps) {
                 </View>
             </View>
             <View style={stylesHome().footer}>
-                {/*<Text></Text>*/}
                 <Image 
                     source={require('../images/Logo_access_siska_t_l.png')}
                     style={stylesHome().LogoApp}
                 />
-                {/*<Image/>*/}
             </View>
 
             {/*Modal para cerrar sesion*/}

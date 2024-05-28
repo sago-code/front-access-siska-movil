@@ -2,7 +2,9 @@ import { ImageStyle, StyleSheet, TextStyle, ViewStyle } from 'react-native';
 
 type Styles = {
     container: ViewStyle;
+    headerContainer: ViewStyle;
     scrollContainer: ViewStyle; 
+    messageContainer: ViewStyle;
     containerDataUser: ViewStyle;
     inputDataI: TextStyle;
     inputDataInDo: TextStyle;
@@ -19,13 +21,32 @@ type Styles = {
     boxCelcho: ViewStyle;
     boxEmail: ViewStyle;
     boxName: ViewStyle;
+    boxButtons: ViewStyle;
+    buttonSiulBox: ViewStyle;
     infoSeccionalBox: ViewStyle;
+    infoSedeBox: ViewStyle;
+    infoProgBox: ViewStyle;
+    infoPensumBox: ViewStyle;
     infoAcaContainer: ViewStyle;
     boxTextDataUser: ViewStyle
     inputsEdit: ViewStyle;
+    buttonG: ViewStyle;
+    inputFocused: ViewStyle;
+    buttonSiul: ViewStyle;
     imageUser: ImageStyle;
     infoAcaText: TextStyle;
     textDataSecc: TextStyle;
+    textDataCarrer: TextStyle;
+    textDataProg: TextStyle;
+    textDataPensum: TextStyle;
+    textG: TextStyle;
+    textSiul: TextStyle;
+    textName: TextStyle;
+    textPerfil: TextStyle;
+    messageText: TextStyle;
+    imageSiul: ImageStyle;
+    imageArrow: ImageStyle;
+    imageLogoApp: ImageStyle;
 }
 
 export function stylesPerfil(): Styles {
@@ -33,12 +54,19 @@ export function stylesPerfil(): Styles {
         container: {
             flex: 1,
         },
+        headerContainer: {
+            height: 100,
+            flexDirection: 'row',
+            justifyContent: 'space-around',
+            alignItems: 'center',
+            backgroundColor: '#e9e9e9'
+        },
         scrollContainer: {
-            paddingBottom: 20, // Ajusta el valor según tus necesidades
+            paddingBottom: 20,
         },
         containerDataUser: {
             flex: 1,
-            marginTop: 260,
+            marginTop: 50,
             alignItems: 'flex-start',
             flexDirection: 'row',
         },
@@ -47,6 +75,24 @@ export function stylesPerfil(): Styles {
             flexDirection: 'row',
             marginRight: 10,
             marginTop: 20,
+        },
+        infoSedeBox: {
+            flex: 1,
+            flexDirection: 'row',
+            marginLeft: 5,
+            marginTop: 20,
+        },
+        infoProgBox: {
+            flex: 1,
+            flexDirection: 'row',
+            marginRight: 10,
+            marginTop: 20,
+        },
+        infoPensumBox: {
+            flex: 1,
+            flexDirection: 'row',
+            marginTop: 20,
+            marginRight: 8
         },
         inputDataI: {
             width: 175,
@@ -109,6 +155,12 @@ export function stylesPerfil(): Styles {
             marginTop: 20,
             marginRight: 10
         },
+        boxButtons: {
+            flexDirection: 'row',
+            marginTop: 20,
+            marginLeft: 25,
+            alignItems: 'center'
+        },
         inputsEdit: {
             width: 200,
             height: 40,
@@ -118,11 +170,14 @@ export function stylesPerfil(): Styles {
             paddingHorizontal: 10,
             marginBottom: 10,
             backgroundColor: '#6d6d6d',
-            color: 'white'
+        },
+        inputFocused: {
+            backgroundColor: '#bebebe',
         },
         textData: {
             marginRight: 20,
-            marginTop: 10
+            marginTop: 10,
+            fontWeight: 'bold',
         },
         textDoc: {
             marginRight: 10,
@@ -133,6 +188,7 @@ export function stylesPerfil(): Styles {
             width: 60,
             textAlign: 'center',
             marginRight: 10,
+            fontWeight: 'bold',
         },
         dataContactText: {
             fontSize: 16,
@@ -171,7 +227,93 @@ export function stylesPerfil(): Styles {
         },
         textDataSecc: {
             marginRight: 4,
-            marginTop: 10
-        }
+            marginTop: 10,
+            fontWeight: 'bold',
+        },
+        textDataCarrer: {
+            marginRight: 10,
+            marginTop: 10,
+            fontWeight: 'bold',
+        },
+        textDataProg: {
+            marginRight: 4,
+            marginTop: 10,
+            fontWeight: 'bold',
+        },
+        textDataPensum: {
+            marginRight: 10,
+            marginTop: 10,
+            fontWeight: 'bold',
+        },
+        buttonG: {
+            width: 150,
+            padding: 10,
+            borderRadius: 5,
+            alignItems: 'center',
+            backgroundColor: '#7fbd93'
+        },
+        buttonSiul: {
+            width: 150,
+            padding: 10,
+            marginLeft: 15,
+            borderRadius: 5,
+            alignItems: 'center',
+            backgroundColor: '#4eacd8'
+        },
+        textG: {
+            fontSize: 16,
+            color: 'white',
+            fontWeight: 'bold',
+        },
+        textSiul: {
+            fontSize: 16,
+            color: 'white',
+            fontWeight: 'bold',
+        },
+        buttonSiulBox: {
+            flexDirection: 'row',
+        },
+        imageSiul: {
+            width: 20,
+            height: 20,
+            marginLeft: 10
+        },
+        messageContainer: {
+            position: 'absolute',
+            top: 0,
+            width: '100%',
+            height: '12%',
+            backgroundColor: 'green',
+            padding: 15,
+            justifyContent: 'center',
+            alignItems: 'center',
+            zIndex: 1
+        },
+        messageText: {
+            color: 'white',
+            fontSize: 16,
+            fontWeight: 'bold',
+            marginTop: 25
+        },
+        textName: {
+            fontWeight: 'bold',
+        },
+        imageArrow: {
+            width: 40,
+            height: 40,
+            marginTop: 20,
+            marginRight: 30
+        },
+        textPerfil: {
+            marginTop: 20,
+            marginRight: 20,
+            fontSize: 20,
+            fontWeight: 'bold',
+        },
+        imageLogoApp: {
+            width: 55,
+            height: 55,
+            marginTop: 20,
+        },
     });
 }
