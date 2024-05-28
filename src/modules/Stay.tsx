@@ -54,7 +54,7 @@ export default function StayScreen() {
             });
 
             if (countdownMinutes === 0 && countdownSeconds <= 10 && countdownSeconds > 0) {
-                setAlarmText('Alarma para salida próxima a sonar');
+                setAlarmText('ALARMA PARA SALIDA PROXIMA A SONAR');
                 startBlinking();
             } else if(countdownMinutes === 0 && countdownSeconds === 0) {
                 setAlarmText('ALARMA SONANDO, RETIRATE DE LA UNIVERSIDAD');
