@@ -9,8 +9,8 @@ export default function StayScreen() {
     const [hours, setHours] = useState(0);
     const [minutes, setMinutes] = useState(0);
     const [seconds, setSeconds] = useState(0);
-    const [countdownMinutes, setCountdownMinutes] = useState(0);
-    const [countdownSeconds, setCountdownSeconds] = useState(10);
+    const [countdownMinutes, setCountdownMinutes] = useState(10);
+    const [countdownSeconds, setCountdownSeconds] = useState(59);
     const [alarmText, setAlarmText] = useState('LA ALARMA PARA SALIDA SONARA EN: ');
     const [alarmTextColor, setAlarmTextColor] = useState('black');
     const [countdownTextColor, setCountdownTextColor] = useState('black');
