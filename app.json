@@ -32,10 +32,16 @@
           "WRITE_EXTERNAL_STORAGE",
           "READ_EXTERNAL_STORAGE"
         ]
-      }
+      },
+      "package": "com.yourcompany.yourapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "cd5fa58d-6c4d-464a-9a57-9e9413cccb47"
+      }
     }
   }
 }
