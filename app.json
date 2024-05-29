@@ -3,6 +3,7 @@
     "name": "front-access-siska-movil",
     "slug": "front-access-siska-movil",
     "version": "1.0.0",
+    "platforms": ["ios", "android"],
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -25,15 +26,15 @@
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff",
-        "package": "com.yourcompany.yourapp",
-        "permissions": [
-          "CAMERA",
-          "WRITE_EXTERNAL_STORAGE",
-          "READ_EXTERNAL_STORAGE"
-        ]
+        "backgroundColor": "#ffffff"
       },
-      "package": "com.yourcompany.yourapp"
+      "package": "com.yourcompany.yourapp",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "CAMERA",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_EXTERNAL_STORAGE"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
